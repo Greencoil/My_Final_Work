@@ -14,3 +14,13 @@ void PutDigitIfLessThree(string[] startS, string[] array2)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+PutDigitIfLessThree(startS, endS);
+PrintArray(endS);
