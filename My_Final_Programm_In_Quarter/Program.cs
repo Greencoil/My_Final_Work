@@ -2,3 +2,15 @@
 Console.Clear();
 string[] startS = new string[] {"hello", "2", "world", ":-"};
 string[] endS = new string[startS.Length];
+void PutDigitIfLessThree(string[] startS, string[] array2)
+{
+    int count = 0;
+    for (int i = 0; i < startS.Length; i++)
+    {
+        if (startS[i].Length <= 3)
+        {
+            endS[count] = startS[i];
+            count++;
+        }
+    }
+}
